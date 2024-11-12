@@ -1,5 +1,9 @@
 import time
-print("Hello Nikhil !")
-for i in range(3):
-  print("Welcome Nikhil")
-  time.sleep(1)  
+import sys
+
+print ('argument list', sys.argv)
+password = sys.argv[1]
+print ("Hello Nikhil. Authenticating the password...")
+print(f"Entered password: {password}")
+assert password == 'pass', "Incorrect password"
+
